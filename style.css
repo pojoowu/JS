@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --main-color: #FCAA4D;
+  --secondary-color: #E67E22;
+}
+
+/*=========
+Global Style
+===========*/
+* {
+  margin: 0;
+}
+
+body {
+  background: #F2F2F2;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins';
+}
+
+a {
+  color: black;
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+span {
+  color: var(--main-color);
+}
+
+ul {
+  list-style-type: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  width: 1000px;
+  position: relative;
+  top: 7rem;
+  left: 9%;
+  font-size: 3.5em;
+}
+
+/*=========
+NavBar
+===========*/
+.navbar {
+  background: white;
+  margin: 0;
+  padding: 1em;
+  width: 97.9%;
+  height: 3vh;
+  position: absolute;
+  top: 0;
+}
+
+.navbar .container {
+  position: relative;
+  left: 1em;
+  display: flex;
+  width: 98%;
+  height: 100%;
+}
+
+.categories {
+  margin-left: auto;
+  display: flex;
+}
+
+.categories li {
+  font-size: 1.2em;
+  margin-left: 2em;
+}
+
+.logo {
+  position: relative;
+  bottom: 0.3em;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/*=========
+SideBar
+===========*/
+.sidebars {
+  position: relative;
+  top: 9rem;
+  left: 12%;
+  width: 200px;
+  margin-bottom: 100px;
+  border-top: transparent;
+  border-bottom: transparent;
+  padding: 10px;
+  z-index: 100;
+  font-size: 2em;
+  border-right-style: dashed;
+  border-right-color: var(--secondary-color);
+}
+
+.sidebars li {
+  margin: 20px;
+}
+
+/*=========
+Contents
+===========*/
+.contents {
+  width: 1000px;
+  height: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 25rem;
+  left: 30%;
+}
+
+.contents-title {
+  width: 100%;
+  margin-left: 1rem;
+  font-size: 3.5em;
+  color: var(--secondary-color);
+}
+
+.contents-text {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  font-size: 1.5em;
+}
+
+.flex-container {
+  width: 1050px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.items {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 20px;
+  border: solid;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+}
+
+.items-img {
+  width: 250px;
+  height: 150px;
+  margin: 0.5em;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.items p {
+  margin: 10px;
+  font-size: 0.75em;
+  text-align: left;
+}
+
+.items .update-date {
+  color: #888;
+  text-align: right;
+}
+
+/*===========
+Content page layout
+===========*/
+.instructions {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: black;
+  font-size: 18px;
+}
+
+.related-topics {
+  font-size: 2em;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.related-topics-list {
+  margin-left: 50px;
+  list-style-type: circle;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+.reference {
+  margin-top: 2rem;
+  font-size: 2em;
+  color: var(--secondary-color);
+}
+
+.reference-list {
+  margin-left: 50px;
+  list-style-type: decimal;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  font-size: 23px;
+}
+
+/*========
+Button, sliders, .etc
+========*/
+button {
+  margin: 0.5rem;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+/*========
+Contact
+========*/
+.contactBar {
+  position: fixed;
+  bottom: 0;
+  background-color: #AAA;
+  width: 100%;
+  margin: 0;
+}
+
+.contactBar ul {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.contact-info {
+  font-size: 15px;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
