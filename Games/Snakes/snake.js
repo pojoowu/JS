@@ -35,6 +35,7 @@ function draw() {
       food = findLocation(s.body).copy();
       speed++;
       s.accCapacity += 1;
+      s.accCapacity = constrain(s.accCapacity, 0, 10);
     }
 
     s.move();
@@ -47,10 +48,14 @@ function draw() {
         food = findLocation(s.body).copy();
         speed++;
         s.accCapacity += 1;
+        s.accCapacity = constrain(s.accCapacity, 0, 10);
       }
       s.move();
       s.accCapacity -= 0.1;
+      s.accCapacity = constrain(s.accCapacity, 0, 10);
     }
+    s.accCapacity += 0.01;
+    s.accCapacity = constrain(s.accCapacity, 0, 10);
     //acc Capacity bar
     stroke(0);
     fill(0);
@@ -148,7 +153,6 @@ function snake(x, y) {
   this.body = [];
   this.body[0] = createVector(x, y);
   this.accCapacity = 5;
-  this.accCapacity = constrain(this.accCapacity, 0, 10);
 
   this.show = function(w) {
     for (pos of this.body) {
