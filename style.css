@@ -177,6 +177,7 @@ Content page layout
   margin-bottom: 0.5rem;
   color: black;
   font-size: 18px;
+  width: 65%;
 }
 
 .related-topics {
@@ -214,6 +215,7 @@ button {
   margin: 0.5rem;
   font-size: 1.5em;
   padding: 5px;
+  border-radius: 4px;
 }
 
 /*========
